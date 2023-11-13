@@ -1,0 +1,371 @@
+* {
+    scroll-behavior: smooth;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.navbar-brand {
+    color: #f9e377;
+    text-decoration: none;
+    font-size: 33px;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+
+.nav-link {
+    color: white;
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #f9e377;
+}
+
+.custom-btn {
+    font-size: 18px;
+    color: black;
+    background-color: #f9e377;
+    border-radius: 50%;
+}
+
+.custom-btn:hover {
+    color: white;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#bg-image {
+    border: 1px solid black;
+    background: url(); /* change */
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 0.9;
+    padding: 20px;
+  }
+
+  .bg-image2 {
+    border: 1px solid black;
+    background: url(images/Bricks.jpg); /* change */
+    background-repeat: repeat;
+
+    border: none;
+    opacity: 0.9;
+    padding: 15px;
+  }
+/* Intro */
+.hide {
+    height: 14vh;
+    width: auto;
+    background:url(images/Bricks.jpg);
+    background-repeat: repeat;
+    height: 100vh;
+}
+.hide2 {
+    height: 13.5vh;
+}
+.sec1 {
+    margin-top: 83px;
+    color: #000000;
+    font-weight: bolder;
+    margin-left: 0%;
+}
+
+.text-n {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+}
+
+.about {
+    margin-top: 0px;
+    background-color: #eae9e1;
+}
+
+.text-md {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* About me */
+.typing-demo {
+    width: 32ch;
+    animation: typing 2s steps(20) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 90px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+/* project */
+.display-4 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.caption h1 {
+    text-decoration: none;
+    color: black;
+}
+
+.form-group {
+    font-size: 22px;
+    padding: 1px;
+    margin-top: 25px;
+}
+
+.con-bg {
+    background-color: #eae9e1;
+    margin-top: 50px;
+    height: 90vh;
+}
+
+.con-bg2 {
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.text-con {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #f9e377;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.con-text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* footer */
+.list-unstyled {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.list-unstyled li a {
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.progress {
+    height: 3em;
+}
+
+.progress-bar {
+    background-color: #f9e377;
+    color: black;
+}
+
+/* animation --- INTRO */
+.animation {
+    height: 60px;
+    overflow: hidden;
+    font-weight: bolder;
+    font-size: 53px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.animation > div > div {
+    padding: 50px 7px;
+    height: 14px;
+    margin: 4px;
+    margin-left: 0%;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 5s infinite;
+}
+
+.first div {
+    color: #000000;
+}
+
+.second div {
+    color: #000000;
+}
+
+.third div {
+    color: #000000;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+    10% {
+        margin-top: 0;
+    }
+    20% {
+        margin-top: -5.62rem;
+    }
+    30% {
+        margin-top: -5.62rem;
+    }
+    40% {
+        margin-top: -11.24rem;
+    }
+    60% {
+        margin-top: -11.24rem;
+    }
+    70% {
+        margin-top: -5.62rem;
+    }
+    80% {
+        margin-top: -5.62rem;
+    }
+    90% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        text-indent: 0;
+        font-size: 16px;
+    }
+
+    .custom-btn {
+        font-size: 16px;
+    }
+
+    .zoom img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .typing-demo {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .progress {
+        height: 1.5rem;
+    }
+
+    .progress-bar {
+        font-size: 14px;
+    }
+
+    .display-4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .caption h1 {
+        font-size: 18px;
+    }
+
+    .form-group {
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .con-bg {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .con-bg2 {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .text-con {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 5px 30px;
+    }
+
+  
+    .animation {
+        font-size: 36px;
+    }
+}
+ .zoom-image {
+    transition: transform 0.3s;
+  }
+
+  .zoom-image:hover {
+    transform: scale(1.1); 
+    opacity: 0.9;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        text-indent: 0;
+        font-size: 16px;
+    }
+
+    .custom-btn {
+        font-size: 16px;
+    }
+
+    .zoom-image {
+        transition: transform 0.3s;
+    }
+
+    .zoom-image:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+}
+
+  
