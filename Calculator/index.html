@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=FontName&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyETeM1/CG9pGFCqFq0RdGCExl3OgpdqN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-MpT2ZEUB8Aq8xAlayAeOJxgFa9Y8eXGC5FbA/P5JXSqD2ZbqtL43BeRStQK/kXp0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyETeM1/CG9pGFCqFq0RdGCExl3OgpdqN" crossorigin="anonymous"></script>
+  
+
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h1 class="cal">Calculator</h1>
+<div id="calculator">
+    <input type="text" id="display" disabled>
+    <button  style="background-color: #505050;color:white" onclick="clearDisplay()">C</button>
+    <button class="operator" onclick="appendToDisplay('/')">/</button>
+    <button class="operator" onclick="appendToDisplay('*')">*</button>
+    <button class="operator" onclick="backspace()">x</button>  <br>
+    <button class="operator" onclick="appendToDisplay('%')">%</button> 
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button class="operator" onclick="appendToDisplay('-')">-</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button class="operator" onclick="appendToDisplay('+')">+</button>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button class="operator" onclick="calculate()">=</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('00')">00</button>
+    <button onclick="appendToDisplay('.')">.</button>
+  </div>
+    <script src="cal.js"></script>
+</body>
+</html>
